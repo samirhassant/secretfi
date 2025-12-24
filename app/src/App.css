@@ -1,0 +1,21 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(251, 191, 36, 0.2), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(244, 114, 182, 0.2), transparent 45%);
+  z-index: -1;
+}
